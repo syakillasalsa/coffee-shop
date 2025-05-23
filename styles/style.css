@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: #AF8F6F;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li.logout-btn {
+    margin-left: auto;
+    padding: 0.5rem 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-family: 'Nunito', sans-serif; /* Apply Nunito font */
+    font-size: 1rem; /* Adjusted font size */
+    font-weight: 400; /* Regular weight */
+}
+
+nav ul li a:hover {
+    background-color: #EADBC8;
+}
+
+main {
+    padding: 1rem;
+    flex: 1;
+}
+
+.menu-banner img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu-item {
+    width: 23%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #F6F5F2;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 150px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.menu-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.menu-item p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.menu-item form {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-item form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #BBAB8C;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.menu-item form input[type="submit"]:hover {
+    background-color: #DAD4B5;
+}
+
+.cart-items table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-items table th,
+.cart-items table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.cart-items table th {
+    background-color: #A0937D;
+    color: white;
+}
+
+.cart-items table td form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-items table td form input[type="submit"] {
+    padding: 8px 16px;
+    background-color: #AF8F6F;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.cart-items table td form input[type="submit"]:hover {
+    background-color: #D8AE7E;
+}
+
+/* Styles for proceed-btn and back-btn */
+.proceed-btn,
+.back-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #A9907E;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.proceed-btn:hover,
+.back-btn:hover {
+    background-color: #D8AE7E;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-content h1 {
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        width: 90%;
+    }
+
+    .sidebar ul li a {
+        padding: 4px 8px;
+        font-size: 0.8rem;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #AF8F6F;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
