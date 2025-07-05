@@ -35,7 +35,7 @@ A lightweight and elegant web application for managing a cozy coffee shop — fe
 2. Siapkan database:
 
    * Buat database di phpMyAdmin/XAMPP (misalnya `coffee_shop_db`)
-   * Import script SQL jika tersedia (`database.sql`), atau sesuaikan struktur tabel secara manual
+   * Import script SQL (`coffee_shop.sql`), atau sesuaikan struktur tabel secara manual
 
 3. Konfigurasi koneksi database:
 
